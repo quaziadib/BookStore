@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(login_page.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.tile{
+    margin-left: 100px;
+    margin-top: 350px;
+    text-align: center;
+}
+
+.customer{
+    width: 250px;
+    height: 100px;
+    background-color: bisque;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.admin{
+    width: 250px;
+    height: 100px;
+    background-color: bisque;
+    margin: 5px;
+
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.author{
+    width: 250px;
+    height: 100px;
+    background-color: bisque;
+    margin: 5px;
+
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.publisher{
+    width: 250px;
+    height: 100px;
+    background-color: bisque;
+    margin: 5px;
+
+    display: inline-block;
+    border-radius: 15px;
+}

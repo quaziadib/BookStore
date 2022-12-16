@@ -1,8 +1,8 @@
 <?php
 // first of all, we need to connect to the database
 require_once('DBconnect.php');
-$var_1 = $_COOKIE['varname']; 
-echo $var_1;
+
+
 // we need to check if the input in the form textfields are not empty
 if(isset($_POST['fname']) && isset($_POST['pass'])){
 	// write the query to check if this username and password exists in our database

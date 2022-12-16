@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
     <div class="loginbox">
-    <img src="user_icon.png" class="user_icon">
+    <img src="img/user_icon.png" class="user_icon">
         <h1>Login</h1>
         <form action="admin_login.php" method="post">
             <p>Username</p>

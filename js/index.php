@@ -15,21 +15,20 @@
 
 </head>
 <body>
-    <section id="header">
-        <div class="row">  
-			<div class="col-md-2" style="font-size: 30px;color:#F2674A;"> ABC School </div>
-			<div class="col-md-10" style="text-align: right"> 
-				<a href="#"> Home </a> 
-				<a href="#" style="margin-left: 20px;"> Students </a> 
-				<a href="#" style="margin-left: 20px;"> Teachers  </a> 
-			</div>
-		</div>
-    
-    </section>
-
-    <section id="footer">
-    
-    </section>
+    <div class="tile">
+        <div class="customer">
+            <td><a href="customer_login.html">Customer Login</a></td>
+        </div>
+        <div class="admin">
+            <td><a href="admin_login.html">Admin Login</a></td>
+        </div>
+        <div class="author">
+            <td><a href="author_login.html">Author Login</a></td>
+        </div>
+        <div class="publisher">
+            <td><a href="publisher_login.html">Publisher Login</a></td>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

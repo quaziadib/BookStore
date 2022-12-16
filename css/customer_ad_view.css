@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #201f1f;
+    min-height: 50vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px
+}
+
+header .logo{
+    position: relative;
+    font: 700;
+    color: #fba;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(147, 86, 2);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transform: 0.6s;
+}
+
+.sub_menu_wrap{
+    position: absolute;
+    background: rgb(57, 56, 56);
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 400px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub_menu_wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub_menu{
+    background-image: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user_info{
+    display: flex;
+    align-items: center;
+}
+
+.user_info h3{
+    font-weight: 500;
+    color: wheat;
+}
+
+.user_info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin: 15px 0 10px;
+}
+
+.sub_menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.sub_menu_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+    margin: 12px 0;
+}
+
+.sub_menu_link p{
+    width: 100%;
+}
+
+.sub_menu_link img{
+    width: 40px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub_menu_link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub_menu_link:hover span{
+    transform: translate(5px);
+}
+
+.sub_menu_link:hover p{
+    font-weight: 600;
+
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+#main{
+    margin-top: 500px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.tile{
+    width: 250px;
+    height: 300px;
+    background-color: bisque;
+    margin: 5px;
+
+    display: inline-block;
+    border-radius: 15px;
+}
+
+
+
+.tile_text_area{
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+.remove_customer_btn{
+    margin-top: 50px;
+    margin-left: 65px;
+}
+
+.btn a{
+    text-decoration: none;
+}
