@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: #201f1f;
     min-height: 50vh;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +24,7 @@ header{
     padding: 40px 100px
 }
 
-header .logo{
+header .logo {
     position: relative;
     font: 700;
     color: #fba;
@@ -35,19 +34,19 @@ header .logo{
 }
 
 
-header ul{
+header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
+header ul li {
     position: relative;
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
@@ -57,52 +56,52 @@ header ul li a{
     transform: 0.6s;
 }
 
-.sub_menu_wrap{
+.sub_menu_wrap {
     position: absolute;
     background: rgb(57, 56, 56);
     top: 100%;
     right: 10%;
     width: 320px;
-    max-height: 400px;
-    overflow: hidden;
+    max-height: fit-content(20em);
+
     transition: max-height 0.5s;
 }
 
-.sub_menu_wrap.open-menu{
+.sub_menu_wrap.open-menu {
     max-height: 400px;
 }
 
-.sub_menu{
+.sub_menu {
     background-image: white;
     padding: 20px;
     margin: 10px;
 }
 
-.user_info{
+.user_info {
     display: flex;
     align-items: center;
 }
 
-.user_info h3{
+.user_info h3 {
     font-weight: 500;
     color: wheat;
 }
 
-.user_info img{
+.user_info img {
     width: 60px;
     border-radius: 50%;
     margin-right: 15px;
     margin: 15px 0 10px;
 }
 
-.sub_menu hr{
+.sub_menu hr {
     border: 0;
     height: 1px;
     width: 100%;
     background-color: #ccc;
 }
 
-.sub_menu_link{
+.sub_menu_link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -110,11 +109,11 @@ header ul li a{
     margin: 12px 0;
 }
 
-.sub_menu_link p{
+.sub_menu_link p {
     width: 100%;
 }
 
-.sub_menu_link img{
+.sub_menu_link img {
     width: 40px;
     background-color: rgb(39, 38, 38);
     border-radius: 50%;
@@ -122,33 +121,33 @@ header ul li a{
     margin-right: 15px;
 }
 
-.sub_menu_link span{
+.sub_menu_link span {
     font-size: 22px;
     transition: transform 0.5s;
 }
 
-.sub_menu_link:hover span{
+.sub_menu_link:hover span {
     transform: translate(5px);
 }
 
-.sub_menu_link:hover p{
+.sub_menu_link:hover p {
     font-weight: 600;
 
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     background-size: cover;
 }
 
-#main{
+#main {
     margin-top: 500px;
     margin-left: 200px;
     box-sizing: border-box;
 }
 
-.tile{
+.tile {
     width: 250px;
     height: 300px;
     background-color: bisque;
@@ -160,12 +159,12 @@ header ul li a{
 
 
 
-.tile_text_area{
-    margin-left:10px;
+.tile_text_area {
+    margin-left: 10px;
     margin-top: 10px;
 }
 
-.modify a{
+.modify a {
     margin-top: 90px;
     text-decoration: none;
 }

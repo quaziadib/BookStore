@@ -38,14 +38,22 @@
                     <span></span>
                 </a>
                 <hr>
-                <p>Delete Book</p>
-                <form action="delete_books.php" method="post">
-                <p>Book ID</p>
-                <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
-                <br>
-                <input type="Submit" name="" value="Submit">
-                </form>
-            </div>
+                <div class="sub_menu_link">
+                    <p style="text-align: center">Delete Book</p>
+                    </div>
+                    <div style="text-align: center">
+                        <form action="delete_book.php" method="post" style="padding-top: 10px;">
+                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                        <br>
+                        <input type="Submit" name="" value="Submit">
+                        </form>
+                        <span></span>
+                    </div>
+                </div>
+
+                <hr>
+
+                
         </div>
     </header>
     <section class="banner"></section>
