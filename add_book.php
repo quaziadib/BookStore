@@ -11,10 +11,9 @@ if(isset($_POST['book_id'])){
     $Bpub_year = $_POST['Bpub_year'];
     $Bprice = $_POST['Bprice'];
     $admin_id = "admin";
-    $admin_id = $_POST['pub_id'];
-
-
-	$sql = "DELETE FROM book WHERE book_id='$u'";
+    $pub_id = $_POST['pub_id'];
+    echo "Project Failed! 404!";
+    $sql = "INSERT INTO book VALUES ('$book_id', '$Bname', '$Bpub_year', '$Bprice', '$admin_id', '$pub_id');";
 	
 	//Execute the query 
 	$result = mysqli_query($conn, $sql);
@@ -22,7 +21,7 @@ if(isset($_POST['book_id'])){
 	
 	//check if it returns an empty set
     
-	if($result){
+	if(mysqli_affected_rows($result)){
 		header("Location: books_ad_view.php");
 	}
 	else{
