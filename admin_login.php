@@ -18,7 +18,7 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
     
 	if(mysqli_num_rows($result) !=0 ){
 		echo "I am here";
-		header("Location: admin_ad_view.php");
+		header("Location: books_ad_view.php");
 	}
 	else{
 		echo "Username or Password is wrong";
