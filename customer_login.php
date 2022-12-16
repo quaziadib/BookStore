@@ -15,9 +15,7 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	//check if it returns an empty set
     
 	if(mysqli_num_rows($result) !=0 ){
-	
-		echo "LET HIM ENTER";
-		//header("Location: home.php");
+		header("Location: home.php"); # books
 	}
 	else{
 		echo "Username or Password is wrong";
