@@ -11,11 +11,11 @@
     <div class="loginbox">
     <img src="user_icon.png" class="user_icon">
         <h1>Login</h1>
-        <form>
+        <form action="admin_login.php" method="post">
             <p>Username</p>
-            <input type="text" name="" id="" placeholder="Enter Username" action="" post="">
+            <input type="text" name="fname" id="" placeholder="Enter Username">
             <p>Password</p>
-            <input type="password" name="" id="" placeholder="Enter Password">
+            <input type="password" name="pass" id="" placeholder="Enter Password">
             <br>
             <input type="submit" name="" value="Login">
             <a href="#">New Here? Click to sign up</a>

@@ -17,7 +17,8 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	//check if it returns an empty set
     
 	if(mysqli_num_rows($result) !=0 ){
-		header("Location: test.php");
+		echo "I am here";
+		header("Location: admin_ad_view.php");
 	}
 	else{
 		echo "Username or Password is wrong";

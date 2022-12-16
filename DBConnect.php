@@ -11,6 +11,6 @@
         die("Connection faild: ".$conn->connect_error);
     }else{
         mysqli_select_db($conn, $database);
-        echo "Connection succeeded!";
+        //echo "Connection succeeded!";
     }
 ?>
