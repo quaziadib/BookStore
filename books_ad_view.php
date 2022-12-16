@@ -42,6 +42,8 @@
     </header>
     <section class="banner"></section>
     <div id="main">
+
+        
        
         <div class="button_area">
             <button class="btn"><a href="#">Add book</a></button>
@@ -68,7 +70,7 @@
                     <button class="modify"><a href="#">Modify book info</a></button>
                 </div>
                 <div class="button_area">
-                    <button class="remove_book_btn" onclick="">Remove book</button>
+                    <button class="remove_book_btn" name = <?php $row[0] ?> onclick="">Remove book</button>
                 </div>
             </div>
 			
@@ -77,6 +79,16 @@
 			}
 			?>
 
+
+            <div>
+                <p>Delete Book</p>
+                <form action="delete_books.php" method="post">
+                    <p>Book ID</p>
+                    <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                    <br>
+                    <input type="Delete!" name="" value="Login">
+                </form>
+            </div>
         <!--
         <div class="tile">
             <div class="tile_text_area">
@@ -96,6 +108,8 @@
         -->
 
     </div>
+
+    
    
 <script>
     let subMenu = document.getElementByID("subMenu");
