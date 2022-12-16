@@ -19,7 +19,7 @@
             <div class="user_logout_dropdown">
             </div>
         </ul>
-        <img src="img/user_icon.png" class="user_pic" onclick="toggleMenu()">
+        <img src="img/user_icon.png" class="user_pic">
         <div class="sub_menu_wrap" id="subMenu">
             <div class="sub_menu">
                 <div class="user_info">
@@ -53,9 +53,45 @@
 
                 <hr>
 
-                
+                <div class="sub_menu_link">
+                    <p style="text-align: center">Add Book</p>
+                </div>
+                    <div style="text-align: center">
+                        <form action="add_book.php" method="post" style="padding-top: 10px;">
+                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                        <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
+                        <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
+                        <input type="text" name="Bprice" id="" placeholder="Enter Price" >
+                        <br>
+                        <br>
+                        <input type="Submit" name="" value="Submit">
+                        </form>
+                        <span></span>
+                    </div>
+
+                    <hr>
+
+                <div class="sub_menu_link">
+                    <p style="text-align: center">Add Book</p>
+                </div>
+                    <div style="text-align: center">
+                        <form action="add_book.php" method="post" style="padding-top: 10px;">
+                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                        <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
+                        <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
+                        <input type="text" name="Bprice" id="" placeholder="Enter Price" >
+                        <br>
+                        <br>
+                        <input type="Submit" name="" value="Submit">
+                        </form>
+                        <span></span>
+                    </div>
+            </div>   
         </div>
     </header>
+
+
+    
     <section class="banner"></section>
     <div id="main">
 
@@ -97,18 +133,6 @@
 			}
 			?>
 
-
-            <div class="tile">
-                <div class="tile_text_area">
-                    <p>Delete Book</p>
-                    <form action="delete_books.php" method="post">
-                        <p>Book ID</p>
-                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
-                        <br>
-                        <input type="Submit" name="" value="Submit">
-                    </form>
-                </div>
-            </div>
         <!--
         <div class="tile">
             <div class="tile_text_area">

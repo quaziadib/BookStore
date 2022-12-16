@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px
+    padding: 40px 100px;
 }
 
 header .logo {
@@ -62,14 +62,10 @@ header ul li a {
     top: 100%;
     right: 10%;
     width: 320px;
-    max-height: fit-content(20em);
-
-    transition: max-height 0.5s;
+    
 }
 
-.sub_menu_wrap.open-menu {
-    max-height: 400px;
-}
+
 
 .sub_menu {
     background-image: white;
