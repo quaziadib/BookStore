@@ -37,6 +37,14 @@
                     <p>Logout</p>
                     <span></span>
                 </a>
+                <hr>
+                <p>Delete Book</p>
+                <form action="delete_books.php" method="post">
+                <p>Book ID</p>
+                <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                <br>
+                <input type="Submit" name="" value="Submit">
+                </form>
             </div>
         </div>
     </header>
@@ -48,6 +56,8 @@
         <div class="button_area">
             <button class="btn"><a href="#">Add book</a></button>
         </div>
+
+        
 
 			<?php 
 			require_once("DBconnect.php");
@@ -80,14 +90,16 @@
 			?>
 
 
-            <div>
-                <p>Delete Book</p>
-                <form action="delete_books.php" method="post">
-                    <p>Book ID</p>
-                    <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
-                    <br>
-                    <input type="Delete!" name="" value="Login">
-                </form>
+            <div class="tile">
+                <div class="tile_text_area">
+                    <p>Delete Book</p>
+                    <form action="delete_books.php" method="post">
+                        <p>Book ID</p>
+                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
+                        <br>
+                        <input type="Submit" name="" value="Submit">
+                    </form>
+                </div>
             </div>
         <!--
         <div class="tile">
