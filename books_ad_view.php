@@ -80,6 +80,8 @@
                         <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
                         <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
                         <input type="text" name="Bprice" id="" placeholder="Enter Price" >
+                        <input type="text" name="pub_id" id="" placeholder="Enter Publishers ID" >
+                        <input type="text" name="author_id" id="" placeholder="Enter Author ID" >
                         <br>
                         <br>
                         <input type="Submit" name="" value="Submit">
