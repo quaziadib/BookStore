@@ -46,7 +46,38 @@
         <div class="button_area">
             <button class="btn"><a href="#">Add book</a></button>
         </div>
-        
+
+			<?php 
+			require_once("DBconnect.php");
+			$sql = "SELECT * FROM book";
+			$result = mysqli_query($conn, $sql);
+			if(mysqli_num_rows($result) > 0){
+				//here we will print every row that is returned by our query $sql
+				while($row = mysqli_fetch_array($result)){
+				//here we have to write some HTML code, so we will close php tag
+			?>
+            <div class="tile">
+                <div class="tile_text_area">
+                    <p class="book_id"><?php echo $row[0]; ?></p><br>
+                    <p class="book_name"><?php echo $row[1]; ?></p><br>
+                    <p class="book_author">SQL_author</p><br>
+                    <p class="book_publish_date"><?php echo $row[2]; ?></p><br>
+                    <p class="book_price"><?php echo $row[3]; ?></p>
+                </div>
+                <div class="button_area">
+                    <button class="modify"><a href="#">Modify book info</a></button>
+                </div>
+                <div class="button_area">
+                    <button class="remove_book_btn" onclick="">Remove book</button>
+                </div>
+            </div>
+			
+			<?php 
+				}					
+			}
+			?>
+
+        <!--
         <div class="tile">
             <div class="tile_text_area">
                 <p class="book_id">SQL_book_id</p><br>
@@ -62,22 +93,8 @@
                 <button class="remove_book_btn" onclick="">Remove book</button>
             </div>
         </div>
-        <div class="tile">
-            <div class="tile_text_area">
-                <p class="book_id">SQL_book_id</p><br>
-                <p class="book_name">SQL_name</p><br>
-                <p class="book_author">SQL_author</p><br>
-                <p class="book_publish_date">SQL_publish_date</p><br>
-                <p class="book_price">SQL_price(id must be used)</p>
-            </div>
-            <div class="button_area">
-                <button class="modify"><a href="#">Modify book info</a></button>
-            </div>
-            <div class="button_area">
-                <button class="remove_book_btn" onclick="">Remove book</button>
-            </div>
-        </div>
-        
+        -->
+
     </div>
    
 <script>
