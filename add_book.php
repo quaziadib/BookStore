@@ -4,7 +4,7 @@ require_once('DBconnect.php');
 
 
 // we need to check if the input in the form textfields are not empty
-if(isset($_POST['book_id'])){
+if(isset($_POST['book_id']) && isset($_POST['Bname']) && isset($_POST['Bpub_year']) && isset($_POST['Bprice']) && isset($_POST['pub_id']) && isset($_POST['author_id'])){
 	// write the query to check if this username and password exists in our database
 	$book_id = $_POST['book_id'];
     $Bname = $_POST['Bname'];
@@ -12,6 +12,7 @@ if(isset($_POST['book_id'])){
     $Bprice = $_POST['Bprice'];
     $admin_id = "admin";
     $pub_id = $_POST['pub_id'];
+    
     $sql = "INSERT INTO book VALUES ('$book_id', '$Bname', '$Bpub_year', '$Bprice', '$admin_id', '$pub_id');";
 	
 	//Execute the query 
@@ -20,7 +21,7 @@ if(isset($_POST['book_id'])){
 	
 	//check if it returns an empty set
     
-	if(mysqli_affected_rows($result)>0){
+	if(mysqli_affected_rows($conn)){
 		header("Location: books_ad_view.php");
 	}
 	else{
