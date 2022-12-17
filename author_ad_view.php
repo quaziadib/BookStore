@@ -16,29 +16,8 @@
             <li><a href="author_ad_view.php">Author</a></li>
             <li><a href="publisher_ad_view.php">Publisher</a></li>
             <li><a href="customer_ad_view.php">Customer</a></li>
-            <div class="user_logout_dropdown">
-            </div>
+            <li><a href="admin_login_view.php">Logout</a></li>
         </ul>
-        <img src="img/user_icon.png" class="user_pic" onclick="toggleMenu()">
-        <div class="sub_menu_wrap" id="subMenu">
-            <div class="sub_menu">
-                <div class="user_info">
-                    <img src="img/user_icon.png">
-                    <h3>SQL_User_name</h3>
-                </div>
-                <hr>
-                <a href="#" class="sub_menu_link">
-                    <img src="img/setting.png">
-                    <p>Settings & Privacy</p>
-                    <span></span>
-                </a>
-                <a href="#" class="sub_menu_link">
-                    <img src="img/logout.png">
-                    <p>Logout</p>
-                    <span></span>
-                </a>
-            </div>
-        </div>
     </header>
 
 
