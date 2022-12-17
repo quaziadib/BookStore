@@ -12,7 +12,6 @@ if(isset($_POST['book_id'])){
     $Bprice = $_POST['Bprice'];
     $admin_id = "admin";
     $pub_id = $_POST['pub_id'];
-    echo "Project Failed! 404!";
     $sql = "INSERT INTO book VALUES ('$book_id', '$Bname', '$Bpub_year', '$Bprice', '$admin_id', '$pub_id');";
 	
 	//Execute the query 
@@ -21,7 +20,7 @@ if(isset($_POST['book_id'])){
 	
 	//check if it returns an empty set
     
-	if(mysqli_affected_rows($result)){
+	if(mysqli_affected_rows($result)>0){
 		header("Location: books_ad_view.php");
 	}
 	else{

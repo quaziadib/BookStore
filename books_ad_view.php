@@ -57,25 +57,7 @@
                     <p style="text-align: center">Add Book</p>
                 </div>
                     <div style="text-align: center">
-                        <form action="add_book.php" method="post" style="padding-top: 10px;">
-                        <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
-                        <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
-                        <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
-                        <input type="text" name="Bprice" id="" placeholder="Enter Price" >
-                        <br>
-                        <br>
-                        <input type="Submit" name="" value="Submit">
-                        </form>
-                        <span></span>
-                    </div>
-
-                    <hr>
-
-                <div class="sub_menu_link">
-                    <p style="text-align: center">Add Book</p>
-                </div>
-                    <div style="text-align: center">
-                        <form action="add_book.php" method="post" style="padding-top: 10px;">
+                    <form action="add_book.php" method="post" style="padding-top: 10px;">
                         <input type="text" name="book_id" id="" placeholder="Enter Book ID" >
                         <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
                         <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
@@ -88,6 +70,11 @@
                         </form>
                         <span></span>
                     </div>
+
+                    <hr>
+
+               
+                    
             </div>   
         </div>
     </header>
