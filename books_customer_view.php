@@ -12,6 +12,7 @@
         <a href="" class="logo">The Book Store</a>
         <ul>
             <li><a href="books_customer_view.php">Books</a></li>
+            <li><a href="customer_signup_view.php">Logout</a></li>
             </div>
         </ul>
 
