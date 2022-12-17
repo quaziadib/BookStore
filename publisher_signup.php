@@ -13,13 +13,13 @@ if(isset($_POST['pub_id']) && isset($_POST['Pname']) && isset($_POST['Pemail']) 
 	$Pbank_ac_no = $_POST['Pbank_ac_no'];
 	$admin_id = 'admin';
 	
-	$sql = " INSERT INTO publisher VALUES( '$pub_id', '$Pname', '$Pemail', '$Ppassword', '$Plicense_no', '$Pbank_ac_no', '$admin_id') ";
+	$sql = " INSERT INTO publisher VALUES( '$pub_id', '$Pname', '$Pemail', '$Ppassword', '$Plicense_no', '$Pbank_ac_no', '$admin_id');";
 	
 	//Execute the query 
 	$result = mysqli_query($conn, $sql);
 	
 	//check if this insertion is happening in the database
-    /*
+    
 	if(mysqli_affected_rows($conn)){
 	
 		//echo "Inseted Successfully";
@@ -28,7 +28,7 @@ if(isset($_POST['pub_id']) && isset($_POST['Pname']) && isset($_POST['Pemail']) 
 	else{
 		//echo "Insertion Failed";
 		header("Location: add_student.php");
-	}*/
+	}
 	
 }
 
