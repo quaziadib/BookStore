@@ -7,7 +7,7 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	// write the query to check if this username and password exists in our database
 	$u = $_POST['fname'];
 	$p = $_POST['pass'];
-	$sql = "SELECT * FROM Author WHERE author_id = '$u' AND Wpassword = '$p'";
+	$sql = "SELECT * FROM Author WHERE author_id = '$u' AND Wpassword = '$p';";
 	
 	//Execute the query 
 	$result = mysqli_query($conn, $sql);

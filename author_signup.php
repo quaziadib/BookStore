@@ -11,7 +11,7 @@ if(isset($_POST['author_id']) && isset($_POST['Wname']) && isset($_POST['Wemail'
 	$Wpassword = $_POST['Wpassword'];
 
 	
-	$sql = " INSERT INTO student VALUES( '$author_id', '$Wname', '$Wemail', '$Wpassword') ";
+	$sql = " INSERT INTO student VALUES( '$author_id', '$Wname', '$Wemail', '$Wpassword');";
 	
 	//Execute the query 
 	$result = mysqli_query($conn, $sql);

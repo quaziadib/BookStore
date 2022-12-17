@@ -22,11 +22,6 @@
             <a href="#">New Here? Click to sign up</a>
         </form>
     
-    
-    <form method="get" action="page2.php">
-    <input type="hidden" name="varname" value="var_value">
-    <input type="submit">
-    </form>
 
     </div>
 </body>

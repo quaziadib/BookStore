@@ -18,7 +18,7 @@
             <input type="password" name="pass" id="" placeholder="Enter Password">
             <br>
             <input type="submit" name="" value="Login">
-            <a href="#">New Here? Click to sign up</a>
+            <a href="customer_signup_view.php">New Here? Click to sign up</a>
         </form>
     </div>
 </body>

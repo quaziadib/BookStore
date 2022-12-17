@@ -7,7 +7,7 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	// write the query to check if this username and password exists in our database
 	$u = $_POST['fname'];
 	$p = $_POST['pass'];
-	$sql = "SELECT * FROM customer WHERE user_id = '$u' AND Cpassword = '$p'";
+	$sql = "SELECT * FROM customer WHERE user_id = '$u' AND Cpassword = '$p';";
 	
 	//Execute the query 
 	$result = mysqli_query($conn, $sql);
@@ -15,7 +15,7 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	//check if it returns an empty set
     
 	if(mysqli_num_rows($result) !=0 ){
-		header("Location: home.php"); # books
+		header("Location: books_customer_view.php"); # books
 	}
 	else{
 		echo "Username or Password is wrong";
