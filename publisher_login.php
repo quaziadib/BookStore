@@ -13,16 +13,16 @@ if(isset($_POST['fname']) && isset($_POST['pass'])){
 	$result = mysqli_query($conn, $sql);
 	
 	//check if it returns an empty set
-    /*
+    
 	if(mysqli_num_rows($result) !=0 ){
 	
 		//echo "LET HIM ENTER";
-		header("Location: home.php");
+		header("Location: customer_ad_view.php");
 	}
 	else{
-		//echo "Username or Password is wrong";
-		header("Location: index.php");
-	}*/
+		echo "Username or Password is wrong";
+		//header("Location: index.php");
+	}
 	
 }
 
