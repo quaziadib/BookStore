@@ -17,16 +17,16 @@ if(isset($_POST['author_id']) && isset($_POST['Wname']) && isset($_POST['Wemail'
 	$result = mysqli_query($conn, $sql);
 	
 	//check if this insertion is happening in the database
-    /*
+    
 	if(mysqli_affected_rows($conn)){
 	
 		//echo "Inseted Successfully";
-		header("Location: show_students.php");
+		header("Location: author_req_page.php.php");
 	}
 	else{
 		//echo "Insertion Failed";
 		header("Location: add_student.php");
-	}*/
+	}
 	
 }
 

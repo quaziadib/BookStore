@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/author_ad_view.css">
+    <link rel="stylesheet" href="css/admin_ad_view.css">
 </head>
 <body>
     <header>
         <a href="" class="logo">The Book Store</a>
         <ul>
-            <li><a href="books_ad_view.html">Books</a></li>
-            <li><a href="admin_ad_view.html">Admin</a></li>
-            <li><a href="author_ad_view.html">Author</a></li>
-            <li><a href="publisher_ad_view.html">Publisher</a></li>
-            <li><a href="customer_ad_view.html">Customer</a></li>
+            <li><a href="author_req_page.php">Author</a></li>
             <div class="user_logout_dropdown">
             </div>
         </ul>
@@ -40,24 +36,57 @@
             </div>
         </div>
     </header>
+
+
+
     <section class="banner"></section>
     <div id="main">
-        <div class="button_area">
-            <button class="btn"><a href="#">Add Author</a></button>
+
+        <div class="tile">
+            <div>
+                <p style="text-align: center">Add Manuscript</p>
+            </div>
+            <div style="text-align: center">
+                <form action="add_req.php" method="post" style="padding-top: 10px;">
+                <input type="text" name="pub_id" id="" placeholder="Enter Publishers ID" >
+                <input type="text" name="author_id" id="" placeholder="Enter Your ID" >
+                
+                <br>
+                <br>
+                <input type="Submit" name="" value="Submit">
+                </form>
+            </div>
         </div>
+
+        <br>
+        </div>
+
+        <hr>
+
+        <?php 
+        require_once("DBconnect.php");
+        $sql = "SELECT * FROM Send_Manuscript;";
+        $result = mysqli_query($conn, $sql);
+        if(mysqli_num_rows($result) > 0){
+            //here we will print every row that is returned by our query $sql
+            while($row = mysqli_fetch_array($result)){
+            //here we have to write some HTML code, so we will close php tag
+        ?>
         <div class="tile">
             <div class="tile_text_area">
-                <p class="Author_id">SQL_author_id</p><br>
-                <p class="Wname">SQL_Wname</p><br>
-                <p class="Wemail">SQL_Wemail</p>
+                    <p class="pub_id">Publisher ID: <?php echo $row[0]; ?></p><br>
+                    <p class="author_id">Author ID: <?php echo $row[1]; ?></p><br>
+                    
             </div>
-            <div class="button_area">
-                <button class="modify"><a href="#">Modify Author info</a></button>
-                <button class="remove_author_btn" onclick="">Remove Author</button>
-            </div>
-            
         </div>
+        
+        <?php 
+            }					
+        }
+        ?>
     </div>
+
+    
    
 <script>
     let subMenu = document.getElementByID("subMenu");
