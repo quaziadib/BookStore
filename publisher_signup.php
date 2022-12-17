@@ -23,11 +23,11 @@ if(isset($_POST['pub_id']) && isset($_POST['Pname']) && isset($_POST['Pemail']) 
 	if(mysqli_affected_rows($conn)){
 	
 		//echo "Inseted Successfully";
-		header("Location: show_students.php");
+		header("Location: publisher_main_view.php");
 	}
 	else{
-		//echo "Insertion Failed";
-		header("Location: add_student.php");
+		echo "Insertion Failed";
+		//header("Location: add_student.php");
 	}
 	
 }
