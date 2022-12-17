@@ -4,7 +4,7 @@ require_once('DBconnect.php');
 
 
 // we need to check if the input in the form textfields are not empty
-if(isset($_POST['admin_id']) && isset($_POST['WAame']) && isset($_POST['Aemail']) && isset($_POST['Apassword']) && isset($_POST['pub_id']) && isset($_POST['author_id'])){
+if(isset($_POST['admin_id']) && isset($_POST['WAame']) && isset($_POST['Aemail']) && isset($_POST['Apassword'])){
 	// write the query to check if this username and password exists in our database
 	$admin_id = $_POST['admin_id'];
     $Aname = $_POST['Aname'];
