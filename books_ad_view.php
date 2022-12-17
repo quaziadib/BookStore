@@ -52,6 +52,8 @@
                 <input type="text" name="Bname" id="" placeholder="Enter Book Name" >
                 <input type="text" name="Bpub_year" id="" placeholder="Enter Publish" >
                 <input type="text" name="Bprice" id="" placeholder="Enter Price" >
+                <input type="text" name="pub_id" id="" placeholder="Enter Publishers ID" >
+                <input type="text" name="author_id" id="" placeholder="Enter Author ID" >
                 <br>
                 <br>
                 <input type="Submit" name="" value="Submit">
@@ -62,7 +64,7 @@
         <br>
 
         <div class="tile">
-            <div class="sub_menu_link">
+            <div>
                 <p style="text-align: center">Modify Book</p>
             </div>
             <div style="text-align: center">
@@ -96,17 +98,10 @@
         ?>
         <div class="tile">
             <div class="tile_text_area">
-                <p class="book_id"><?php echo $row[0]; ?></p><br>
-                <p class="book_name"><?php echo $row[1]; ?></p><br>
-                <p class="book_author">SQL_author</p><br>
-                <p class="book_publish_date"><?php echo $row[2]; ?></p><br>
-                <p class="book_price"><?php echo $row[3]; ?></p>
-            </div>
-            <div class="button_area">
-                <button class="modify"><a href="#">Modify book info</a></button>
-            </div>
-            <div class="button_area">
-                <button class="remove_book_btn" name = <?php $row[0] ?> onclick="">Remove book</button>
+                <p class="book_id">Book ID: <?php echo $row[0]; ?></p><br>
+                <p class="book_name">Name: <?php echo $row[1]; ?></p><br>
+                <p class="book_publish_date">Published Year: <?php echo $row[2]; ?></p><br>
+                <p class="book_price">Price: <?php echo $row[3]; ?></p>
             </div>
         </div>
         
