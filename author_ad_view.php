@@ -48,7 +48,7 @@
 
     <div class="tile">
             <div>
-                <p style="text-align: center">Delete Admin</p>
+                <p style="text-align: center">Delete Author</p>
             </div>
             <div style="text-align: center">
                 <form action="delete_author.php" method="post" style="padding-top: 10px;">
@@ -67,7 +67,7 @@
             </div>
             <div style="text-align: center">
                 <form action="add_author.php" method="post" style="padding-top: 10px;">
-                <input type="text" name="author_id" id="" placeholder="Enter Admin ID" >
+                <input type="text" name="author_id" id="" placeholder="Enter Author ID" >
                 <input type="text" name="Wname" id="" placeholder="Enter Name" >
                 <input type="text" name="Wemail" id="" placeholder="Enter Email" >
                 <input type="password" name="Wpassword" id="" placeholder="Enter Password" >
@@ -82,14 +82,14 @@
 
         <div class="tile">
             <div>
-                <p style="text-align: center">Modify Admin</p>
+                <p style="text-align: center">Modify Author</p>
             </div>
             <div style="text-align: center">
-                <form action="modify_admin.php" method="post" style="padding-top: 10px;">
-                <input type="text" name="admin_id" id="" placeholder="Enter Admin ID" >
-                <input type="text" name="Aname" id="" placeholder="Enter Name" >
-                <input type="text" name="Aemail" id="" placeholder="Enter Email" >
-                <input type="password" name="Apassword" id="" placeholder="Enter Password" >
+                <form action="modify_author.php" method="post" style="padding-top: 10px;">
+                <input type="text" name="author_id" id="" placeholder="Enter Author ID" >
+                <input type="text" name="Wname" id="" placeholder="Enter Name" >
+                <input type="text" name="Wemail" id="" placeholder="Enter Email" >
+                <input type="password" name="Wpassword" id="" placeholder="Enter Password" >
                 <br>
                 <br>
                 <input type="Submit" name="" value="Submit">
@@ -101,7 +101,7 @@
 
         <?php 
         require_once("DBconnect.php");
-        $sql = "SELECT * FROM admin";
+        $sql = "SELECT * FROM author";
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0){
             //here we will print every row that is returned by our query $sql
@@ -110,9 +110,9 @@
         ?>
         <div class="tile">
             <div class="tile_text_area">
-            <p class="Admin_id">Admin ID: <?php echo $row[0]; ?></p><br>
-                    <p class="Aname">Name: <?php echo $row[1]; ?></p><br>
-                    <p class="Aemail">Email: <?php echo $row[2]; ?></p><br>
+            <p class="author_id">Author ID: <?php echo $row[0]; ?></p><br>
+                    <p class="Wname">Name: <?php echo $row[1]; ?></p><br>
+                    <p class="Wemail">Email: <?php echo $row[2]; ?></p><br>
             </div>
         </div>
         
