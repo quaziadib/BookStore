@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="" class="logo">The Book Store</a>
+        <a href="" class="logo">The Book Store&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request For a Manuscript List</a>
         <ul>
             <li><a href="author_req_page.php">Author</a></li>
             <li><a href="author_login_view.php">Logout</a></li>
@@ -22,8 +22,6 @@
     
     <section class="banner"></section>
     <div id="main">
-
-   
 
         <br>
         </div>
